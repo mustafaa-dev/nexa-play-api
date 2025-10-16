@@ -1,0 +1,29 @@
+{
+  "hello": "مرحبا",
+  "welcome": "مرحبًا بك في لاو هاب",
+  "error_types": {
+    "bad_request": "طلب غير صالح",
+    "unauthorized": "غير مصرح",
+    "forbidden": "محظور",
+    "not_found": "غير موجود",
+    "conflict": "تعارض",
+    "internal_server_error": "خطأ في الخادم",
+    "validation_error": "خطأ في التحقق"
+  },
+  "actions": {
+    "create": "إنشاء",
+    "update": "تحديث",
+    "delete": "حذف",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "confirm": "تأكيد"
+  },
+  "messages": {
+    "success": "تم بنجاح",
+    "error": "حدث خطأ",
+    "created": "تم الإنشاء بنجاح",
+    "updated": "تم التحديث بنجاح",
+    "deleted": "تم الحذف بنجاح"
+  }
+}

@@ -1,0 +1,11 @@
+{
+"notFound": "$t(properties.{property}) بالمعرف {value} غير موجود{suffix}",
+"invalid": "$t(properties.{property}) بالمعرف {value} غير صالح{suffix}",
+"invalid_input": "تم إدخال قيمة $t(properties.{property}) غير صالح{suffix}",
+"already_exists": "$t(properties.{property}) بالمعرف {value} موجود{suffix} بالفعل",
+"invalid_credentials": "تم إدخال بيانات دخول غير صالحة. يرجى التحقق من البريد الإلكتروني وكلمة المرور.",
+"user_not_active": "الحساب غير مفعل.",
+"invalid_refresh_token": "تم إدخال رمز تحديث غير صالح.",
+"invalid_or_expired_otp": "تم إدخال رمز تحديث غير صالح أو منتهي الصلاحية.",
+"failed_to_reset_password": "فشل تحديث كلمة المرور."
+}

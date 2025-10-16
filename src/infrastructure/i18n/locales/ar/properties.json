@@ -1,0 +1,21 @@
+{
+  "email": "بريد الإلكتروني",
+  "password": "كلمة مرور",
+  "username": "اسم مستخدم",
+  "firstName": "اسم أول",
+  "lastName": "اسم العائلة",
+  "phoneNumber": "رقم الهاتف",
+  "address": "عنوان",
+  "city": "مدينة",
+  "country": "دولة",
+  "postalCode": "رمز بريدي",
+  "dateOfBirth": "تاريخ ميلاد",
+  "gender": "جنس",
+  "role": "دور",
+  "status": "حالة",
+  "createdAt": "تاريخ إنشاء",
+  "updatedAt": "تاريخ تحديث",
+  "notification": "إشعار"
+  
+}
+

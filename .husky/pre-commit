@@ -1,0 +1,15 @@
+echo "🔍 Running pre-commit checks..."
+
+# Run lint-staged (linting, formatting, type checking)
+npx lint-staged
+
+# Validate that main database migrations compile
+echo "📦 Validating main database setup..."
+npm run build > /dev/null 2>&1 || {
+  echo "❌ Build failed. Please fix compilation errors."
+  exit 1
+}
+
+
+
+echo "✅ All pre-commit checks passed!"

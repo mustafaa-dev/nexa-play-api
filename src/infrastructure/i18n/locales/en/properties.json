@@ -1,0 +1,20 @@
+{
+  "email": "Email",
+  "password": "Password",
+  "username": "Username",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "phoneNumber": "Phone Number",
+  "address": "Address",
+  "city": "City",
+  "country": "Country",
+  "postalCode": "Postal Code",
+  "dateOfBirth": "Date of Birth",
+  "gender": "Gender",
+  "role": "Role",
+  "status": "Status",
+  "createdAt": "Created At",
+  "updatedAt": "Updated At",
+  "notification": "Notification"
+}
+

@@ -1,0 +1,29 @@
+{
+  "hello": "Hello",
+  "welcome": "Welcome to Law Hub",
+  "error_types": {
+    "bad_request": "Bad Request",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "not_found": "Not Found",
+    "conflict": "Conflict",
+    "internal_server_error": "Internal Server Error",
+    "validation_error": "Validation Error"
+  },
+  "actions": {
+    "create": "Create",
+    "update": "Update",
+    "delete": "Delete",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "confirm": "Confirm"
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "created": "Successfully created",
+    "updated": "Successfully updated",
+    "deleted": "Successfully deleted"
+  }
+}

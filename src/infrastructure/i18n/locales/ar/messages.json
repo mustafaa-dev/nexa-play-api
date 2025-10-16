@@ -1,0 +1,9 @@
+{
+    "please_verify_your_email": "يرجى التحقق من بريدك الإلكتروني للمتابعة.",
+    "login_successful": "تم تسجيل الدخول بنجاح.",
+    "logout_successful": "تم تسجيل الخروج بنجاح.",
+    "password_reset_email_sent_successfully": "تم إرسال رابط تحديث كلمة المرور بنجاح.",
+    "password_reset_successful": "تم تحديث كلمة المرور بنجاح.",
+    "verification_email_sent_successfully": "تم إرسال بريد التحقق بنجاح.",
+    "email_verified_successfully": "تم التحقق من بريدك الإلكتروني بنجاح."
+}

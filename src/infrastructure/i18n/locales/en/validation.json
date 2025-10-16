@@ -1,0 +1,12 @@
+{
+  "required": "{field} is required",
+  "isNotEmpty": "{field} cannot be empty",
+  "isEmail": "{field} must be a valid email address",
+  "isString": "{field} must be a string",
+  "minLength": "{field} must be at least {min} characters",
+  "isStrongPassword": "{field} must be a strong password with uppercase, lowercase, numbers, and special characters",
+  "isUrl": "{field} must be a valid URL",
+  "invalid": "{field} is invalid",
+  "whitelistValidation": "{field} must not exist",
+  "shouldNotExist": "{field} is not allowed"
+}

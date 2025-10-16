@@ -1,0 +1,11 @@
+{
+    "norFound":"$t({property}) with value {value} not found{suffix}",
+    "invalid":"$t({property}) with value {value} is invalid{suffix}",
+    "invalid_input": "Invalid input for property $t(properties.{property}){suffix}",
+    "already_exists": "Property $t(properties.{property}) with value {value} already exists{suffix}",
+    "invalid_credentials": "Invalid credentials. Please check your email and password.",
+    "user_not_active": "User is not active.",
+    "invalid_refresh_token": "Invalid refresh token.",
+    "invalid_or_expired_otp": "Invalid or expired OTP.",
+    "failed_to_reset_password": "Failed to reset password."
+}

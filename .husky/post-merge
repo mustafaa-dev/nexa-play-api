@@ -1,0 +1,25 @@
+echo "🔄 Post-merge hook running..."
+
+# Check if package.json was changed
+if git diff HEAD@{1} --name-only | grep -q "package.json"; then
+  echo "📦 package.json changed, running yarn install..."
+  yarn
+fi
+
+# Check if migration files were added/changed
+MAIN_MIGRATIONS_CHANGED=$(git diff HEAD@{1} --name-only | grep "src/infrastructure/database/migrations/" || true)
+TENANT_MIGRATIONS_CHANGED=$(git diff HEAD@{1} --name-only | grep "src/infrastructure/database/tenant-migrations/" || true)
+
+if [ -n "$MAIN_MIGRATIONS_CHANGED" ]; then
+  echo "📊 Main database migrations changed:"
+  echo "$MAIN_MIGRATIONS_CHANGED"
+  echo "💡 Don't forget to run: npm run db:migrate"
+fi
+
+if [ -n "$TENANT_MIGRATIONS_CHANGED" ]; then
+  echo "🏢 Tenant database migrations changed:"
+  echo "$TENANT_MIGRATIONS_CHANGED"
+  echo "💡 Don't forget to run: npm run tenant:db:migrate"
+fi
+
+echo "✅ Post-merge hook completed!"

@@ -1,0 +1,9 @@
+{
+    "please_verify_your_email": "Please verify your email to continue.",
+    "login_successful": "Login successful.",
+    "logout_successful": "Logout successful.",
+    "password_reset_email_sent_successfully": "Password reset email sent successfully.",
+    "password_reset_successful": "Password reset successful.",
+    "verification_email_sent_successfully": "Verification email sent successfully.",
+    "email_verified_successfully": "Email verified successfully."
+}

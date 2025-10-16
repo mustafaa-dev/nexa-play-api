@@ -1,0 +1,12 @@
+{
+  "required": "{field} مطلوب",
+  "isNotEmpty": "{field} لا يمكن أن يكون فارغًا",
+  "isEmail": "{field} يجب أن يكون عنوان بريد إلكتروني صالح",
+  "isString": "{field} يجب أن يكون نصًا",
+  "minLength": "{field} يجب أن يكون على الأقل {min} أحرف",
+  "isStrongPassword": "{field} يجب أن تكون كلمة مرور قوية",
+  "isUrl": "{field} يجب أن يكون رابط صالح",
+  "invalid": "{field} غير صالح",
+  "whitelistValidation": "{field} يجب أن لا يكون موجود",
+  "shouldNotExist": "{field} غير مسموح به"
+}

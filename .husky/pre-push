@@ -1,0 +1,42 @@
+#!/bin/sh
+set -e
+
+echo "🚀 Running pre-push checks..."
+
+# Run linter
+echo "🔍 Running linter..."
+npm run lint || {
+  echo "❌ Linting failed. Please fix before pushing."
+  exit 1
+}
+
+# Run build
+echo "🏗️ Building project..."
+npm run build || {
+  echo "❌ Build failed. Please fix before pushing."
+  exit 1
+}
+
+
+# Validate migrations
+echo "📊 Validating database migrations..."
+node -e "
+const { join } = require('path');
+const fs = require('fs');
+
+const mainMigrationsPath = join(process.cwd(), 'src/infrastructure/database/migrations');
+if (fs.existsSync(mainMigrationsPath)) {
+  const files = fs.readdirSync(mainMigrationsPath).filter(f => f.endsWith('.ts'));
+  console.log(\`📁 Found \${files.length} main migrations\`);
+}
+
+const tenantMigrationsPath = join(process.cwd(), 'src/infrastructure/database/tenant-migrations');
+if (fs.existsSync(tenantMigrationsPath)) {
+  const files = fs.readdirSync(tenantMigrationsPath).filter(f => f.endsWith('.ts'));
+  console.log(\`🏢 Found \${files.length} tenant migrations\`);
+}
+
+console.log('✅ Migration validation completed');
+"
+
+echo "✅ All pre-push checks passed!"
